@@ -11,8 +11,8 @@ type InputContainerType = {
 
 export default function InputContainer({ label = "Label", placeholder, onChange, value, type }: InputContainerType) {
     return (
-        <div>
-            <div className='label'>{label}</div>
+        <div className='w-full'>
+            <div className='text-left text-sm text-neutral-800 mb-2'>{label}</div>
             <Input
                 placeholder={placeholder}
                 onChange={onChange}

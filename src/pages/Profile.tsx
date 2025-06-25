@@ -7,7 +7,7 @@ export default function Profile() {
     const [user, setUser] = useAtom(userAtom)
 
   return (
-    <div>
+    <div className='w-full pl-10'>
         <h1 className="text-2xl font-bold mb-4">Thông tin tài khoản</h1>
 
         <div className='flex flex-col justify-center items-center h-full'>

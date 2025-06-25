@@ -10,11 +10,13 @@ type ButtonType = {
 
 export default function Button({ onClick, label = "Click Me", disabled = false, type = "primary", className }: ButtonType) {
   
-  let buttonClass = "px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 w-full";
+  let buttonClass = "px-4 py-3 rounded-md font-thin focus:outline-none focus:ring-2 focus:ring-blue-500 w-full";
 
   switch (type) {
     case "primary":
         buttonClass += " bg-black text-white";
+    case "gray":
+        buttonClass += " bg-gray-400 text-white";
         break;
   }
   

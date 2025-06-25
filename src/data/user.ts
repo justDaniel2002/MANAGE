@@ -1,8 +1,8 @@
-export const user = [
+export const userData = [
     {
         username: "admin",
         fullname: "Admin User",
-        email: "name@gmail.com",
+        email: "admin@gmail.com",
         avatar: "https://i.pravatar.cc/150?img=3",
         status: "active",
         phone: "1234567890",
@@ -12,7 +12,7 @@ export const user = [
     {
         username: "user",
         fullname: "User",
-        email: "name@gmail.com",
+        email: "user@gmail.com",
         avatar: "https://i.pravatar.cc/150?img=3",
         status: "active",
         phone: "1234567890",

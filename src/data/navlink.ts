@@ -1,80 +1,80 @@
 export const navLinks = [
     {
         label: "Trang chủ",
-        icon: "home",
+        icon: "material-symbols:home",
         link: "/",
         role: ["USER"]
     },
     {
         label: "Kho",
-        icon: "home",
+        icon: "iconoir:garage",
         link: "/",
         role: ["USER"]
     },
     {
         label: "Sản phẩm",
-        icon: "home",
+        icon: "prime:box",
         link: "/",
         role: ["USER"]
     },
     {
         label: "Bán hàng",
-        icon: "home",
+        icon: "hugeicons:sale-tag-02",
         link: "/",
         role: ["USER"]
     },
     {
         label: "Mua hàng",
-        icon: "home",
+        icon: "solar:cart-4-line-duotone",
         link: "/",
         role: ["USER"]
     },
     {
         label: "Trả hàng",
-        icon: "home",
+        icon: "lineicons:cart-1",
         link: "/",
         role: ["USER"]
     },
     {
         label: "Phiếu kho",
-        icon: "home",
+        icon: "ep:list",
         link: "/",
         role: ["USER"]
     },
     {
         label: "Nhập kho",
-        icon: "home",
+        icon: "fluent:list-rtl-20-regular",
         link: "/",
         role: ["USER"]
     },
     {
         label: "Xuất kho",
-        icon: "home",
+        icon: "fluent:list-rtl-20-regular",
         link: "/",
         role: ["USER"]
     },
     {
         label: "Báo cáo",
-        icon: "home",
+        icon: "bx:bar-chart",
         link: "/",
         role: ["USER"]
     },
     {
         label: "Dashboard",
-        icon: "home",
-        link: "/",
+        icon: "bx:bar-chart",
+        link: "/admin/dashboard",
         role: ["ADMIN"]
     },
     {
         label: "Setting List",
-        icon: "home",
-        link: "/",
+        icon: "uil:setting",
+        link: "/admin/settingManagement",
         role: ["ADMIN"]
     },
     {
         label: "Account List",
-        icon: "home",
-        link: "/",
+        icon: "mdi:account",
+        link: "/admin/userManagement",
         role: ["ADMIN"]
     },
 ]
