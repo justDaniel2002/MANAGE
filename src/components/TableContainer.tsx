@@ -169,4 +169,141 @@ const CategoryColumns = [
     }
 ]
 
-export { AccountColumns, SettingColumns, CategoryColumns };
+
+const InboundColumns = [
+    {
+        label: 'Mã phiếu',
+        key: 'id'
+    },
+
+    {
+        label: 'Nhà cung cấp',
+        key: 'supplier'
+    },
+
+    {
+        label: 'Phân loại nhập kho',
+        key: 'category'
+    },
+
+    {
+        label: 'Người tạo phiếu',
+        key: 'createdBy'
+    },
+
+    {
+        label: 'Ngày tạo phiếu',
+        key: 'createdAt'
+    },
+
+    {
+        label: 'Chứng từ tham chiếu',
+        key: 'document'
+    },
+
+    {
+        label: 'Hành động',
+        key: '',
+        render: () => (
+            <div className="flex space-x-4 justify-center">
+                <button className="text-red-500 hover:underline text-2xl"><Icon icon="tabler:trash" /></button>
+                <button className="text-blue-500 hover:underline text-2xl"><Icon icon="proicons:pencil" /></button>
+            </div>
+        )
+    }
+]
+
+const OrderColumns = [
+    {
+        label: 'Mã phiếu',
+        key: 'orderId'
+    },
+
+    {
+        label: 'Tên khách hàng',
+        key: 'customerName'
+    },
+
+    {
+        label: 'SĐT',
+        key: 'phone'
+    },
+    {
+        label: 'Tổng tiền',
+        key: 'totalAmount',
+        render: (value: number) => new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(value)
+    },
+
+    {
+        label: 'Ngày tạo',
+        key: 'createdAt'
+    },
+
+    {
+        label: 'Trạng thái',
+        key: 'status',
+        render: (value: string) => {
+            const statusClass = value === 'active' ? 'text-green-500' : 'text-red-500';
+            return <span className={statusClass}>{value}</span>;
+        }
+    },
+
+    {
+        label: 'Hành động',
+        key: '',
+        render: () => (
+            <div className="flex space-x-4 justify-center">
+                <button className="text-red-500 hover:underline text-2xl"><Icon icon="tabler:trash" /></button>
+                <button className="text-blue-500 hover:underline text-2xl"><Icon icon="proicons:pencil" /></button>
+            </div>
+        )
+    }
+]
+
+const ProductColumns = [
+    {
+        label: 'Product Name',
+        key: 'productName',
+    },
+    {
+        label: 'Product ID',
+        key: 'productId',
+    },
+    {
+        label: 'Price',
+        key: 'price',
+        render: (value: number) => new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(value)
+    },
+
+    {
+        label: 'Stock',
+        key: 'stock',
+    },
+
+    {
+        label: 'Type',
+        key: 'type'
+    },
+    {
+        label: 'Trạng thái',
+        key: 'status',
+        render: (value: string) => {
+            const statusClass = value === 'active' ? 'text-green-500' : 'text-red-500';
+            return <span className={statusClass}>{value}</span>;
+        }
+    },
+
+    {
+        label: 'Hành động',
+        key: '',
+        className: 'w-40',
+        render: () => (
+            <div className="flex space-x-4 justify-center">
+                <button className="text-red-500 hover:underline text-2xl"><Icon icon="tabler:trash" /></button>
+                <button className="text-blue-500 hover:underline text-2xl"><Icon icon="proicons:pencil" /></button>
+            </div>
+        )
+    }
+
+]
+export { AccountColumns, SettingColumns, CategoryColumns, InboundColumns, OrderColumns, ProductColumns };

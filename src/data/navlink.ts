@@ -14,13 +14,13 @@ export const navLinks = [
     {
         label: "Sản phẩm",
         icon: "prime:box",
-        link: "/",
+        link: "/productList",
         role: ["USER"]
     },
     {
         label: "Bán hàng",
         icon: "hugeicons:sale-tag-02",
-        link: "/",
+        link: "/orderList",
         role: ["USER"]
     },
     {
@@ -44,7 +44,7 @@ export const navLinks = [
     {
         label: "Nhập kho",
         icon: "fluent:list-rtl-20-regular",
-        link: "/",
+        link: "/inboundList",
         role: ["USER"]
     },
     {

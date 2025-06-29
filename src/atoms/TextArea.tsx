@@ -1,17 +1,15 @@
 import React from 'react'
 
-type InputType = {
+type TextAreaType = {
     placeholder?: string;
-    onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+    onChange?: any;
     value?: string;
-    type?: string;
     disable? : boolean
 }
 
-export default function Input({ placeholder = "Enter text", onChange, value, type="text", disable = false }: InputType) {
+export default function TextArea({ placeholder = "Enter text", onChange, value, disable = false }: TextAreaType) {
     return (
-        <input
-            type={type}
+        <textarea
             className="border border-gray-300 rounded-md p-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
             placeholder={placeholder}
             onChange={onChange}
